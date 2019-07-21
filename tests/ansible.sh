@@ -1,3 +1,3 @@
 #!/bin/bash
-
-ansible-lint -c .ansible-lint `find ansible/playbooks -regex ".*\.\(yml\)"`
+cd ..
+ansible-lint -v -c .ansible-lint `find ansible/playbooks -regex ".*\.\(yml\)"`
